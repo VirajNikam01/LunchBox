@@ -17,7 +17,7 @@ const Header = () => {
       <ul className="flex fixed justify-between items-center w-full py-6 px-3 text-xl bottom-0 left-0 bg-sky-100 sm:relative sm:gap-10 sm:w-fit sm:bg-transparent">
         <Link to={"/"}>
           <li className="px-2 mx-4 cursor-pointer transition-all duration-300 text-teal-9500 hover:text-teal-600">
-            <i class="fa-solid fa-house">
+            <i className="fa-solid fa-house">
               <span className="text-xs hidden lg:inline-block sm:ml-2">
                 Home
               </span>
@@ -26,7 +26,7 @@ const Header = () => {
         </Link>
         <Link to={"search"}>
           <li className="px-2 mx-4 cursor-pointer transition-all duration-300 text-teal-9500 hover:text-teal-600">
-            <i class="fa-solid fa-magnifying-glass">
+            <i className="fa-solid fa-magnifying-glass">
               <span className="text-xs hidden lg:inline-block sm:ml-2">
                 Search
               </span>
@@ -35,7 +35,7 @@ const Header = () => {
         </Link>
         <Link to={"contact"}>
           <li className="px-2 mx-4 cursor-pointer transition-all duration-300 text-teal-9500 hover:text-teal-600">
-            <i class="fa-solid fa-message">
+            <i className="fa-solid fa-message">
               <span className="text-xs hidden lg:inline-block sm:ml-2">
                 Contact
               </span>
@@ -44,7 +44,7 @@ const Header = () => {
         </Link>
         <Link to={"cart"}>
           <li className="px-2 mx-4 cursor-pointer transition-all duration-300 text-teal-9500 hover:text-teal-600">
-            <i class="fa-solid fa-cart-shopping">
+            <i className="fa-solid fa-cart-shopping">
               <span className="text-xs hidden lg:inline-block sm:ml-2">
                 Cart
               </span>
