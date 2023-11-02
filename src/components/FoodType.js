@@ -9,11 +9,14 @@ const FoodType = () => {
   //   if (data == null) return <Shimmer />;
   console.log(MOCK_DATA);
   const AllFood = MOCK_DATA?.data?.cards[1]?.card?.card?.imageGridCards?.info;
-  console.log(AllFood);
+  AllFood.length = 9;
 
   return (
     <div>
-      <div className="flex flex-wrap items-center justify-center">
+      <h2 className="px-5 pt-5 text-2xl font-bold">
+        {MOCK_DATA?.data?.cards[1]?.card?.card?.header?.title}
+      </h2>
+      <div className="flex flex-wrap items-center justify-evenly">
         {AllFood.map((dish) => (
           <Food key={dish.id} mind={dish} />
         ))}
