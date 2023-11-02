@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
-    <div className="flex justify-between items-center p-2 sm:w-11/12 sm:mx-auto">
+    <div className="flex justify-between items-center p-2 sm:w-11/12 sm:mx-auto fixed z-10">
       {/* logo */}
       <div>
         <h2 className="font-serif font-bold text-xl text-teal-900">
