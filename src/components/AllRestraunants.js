@@ -1,10 +1,11 @@
+import { Link } from "react-router-dom";
 import MOCK_DATA from "../utility/swiggyMockData.json";
 import Restraunant from "./Restraunant";
 
 const AllRestraunants = () => {
   const data =
     MOCK_DATA.data.cards[2].card.card.gridElements.infoWithStyle.restaurants;
-  console.log(data);
+  console.log(data[0].info.id);
 
   return (
     <div className="mb-20">
@@ -13,7 +14,9 @@ const AllRestraunants = () => {
       </h2>
       <div className="flex flex-wrap justify-evenly lg:gap-5">
         {data.map((elem, i) => (
-          <Restraunant key={i} resData={elem.info} />
+          <Link to={"resdetails/" + elem.info.id} key={i}>
+            <Restraunant resData={elem.info} />
+          </Link>
         ))}
       </div>
     </div>

@@ -8,6 +8,7 @@ import Search from "./src/pages/Search";
 import Contact from "./src/pages/Contact";
 import Cart from './src/pages/Cart'
 import Error from './src/pages/Error'
+import ResDetails from "./src/pages/ResDetails";
 
 const AppLayout = () => {
   return (
@@ -39,6 +40,10 @@ const appRouter = createBrowserRouter([
       {
         path:"cart",
         element:<Cart/>
+      },
+      {
+        path: "resdetails/:resId",
+        element: <ResDetails/>
       }
     ],
     errorElement: <Error/>
