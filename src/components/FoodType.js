@@ -7,7 +7,7 @@ const FoodType = () => {
   //   const data = useFetch();
   //   console.log(data );
   //   if (data == null) return <Shimmer />;
-  console.log(MOCK_DATA);
+
   const AllFood = MOCK_DATA?.data?.cards[1]?.card?.card?.imageGridCards?.info;
   AllFood.length = 9;
 

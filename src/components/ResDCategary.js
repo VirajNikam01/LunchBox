@@ -3,7 +3,7 @@ import ResDItems from "./ResDItems";
 
 const ResDCategary = ({ resDishes }) => {
   const { itemCards } = resDishes;
-  console.log(itemCards);
+
   return (
     <div className="my-14 px-4">
       <h1 className="text-2xl font-bold bg-slate-200 py-2">{resDishes.title}</h1>

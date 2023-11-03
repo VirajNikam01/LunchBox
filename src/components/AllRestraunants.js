@@ -5,7 +5,7 @@ import Restraunant from "./Restraunant";
 const AllRestraunants = () => {
   const data =
     MOCK_DATA.data.cards[2].card.card.gridElements.infoWithStyle.restaurants;
-  console.log(data[0].info.id);
+
 
   return (
     <div className="mb-20">

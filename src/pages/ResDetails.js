@@ -8,7 +8,6 @@ const ResDetails = () => {
   const { resId } = useParams();
   const data = useResInfo(resId);
   if (data == null) return <Shimmer />;
-  console.log(data);
 
   const {
     city,
@@ -25,11 +24,11 @@ const ResDetails = () => {
 
   //for dish items
 
-  const { cards } = data?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR;
+  let cards = data?.data?.cards[2]?.groupedCard?.cardGroupMap?.REGULAR?.cards;
+
   if (!cards) {
-    cards = data?.data?.cards[3]?.groupedCard?.cardGroupMap?.REGULAR
+    cards = data?.data?.cards[3]?.groupedCard?.cardGroupMap?.REGULAR?.cards;
   }
-  console.log(cards);
 
   const resDishes = cards.filter((elem) => {
     return elem.card.card["@type"].includes(
