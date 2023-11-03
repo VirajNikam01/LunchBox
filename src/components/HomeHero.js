@@ -7,10 +7,10 @@ const HomeHero = () => {
         alt="img"
       />
       <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2">
-        <h1 className=" text-black font-extrabold text-3xl font-serif lg:text-6xl tracking-widest	">
+        <h1 className=" text-black shadow-2xl font-extrabold text-3xl font-serif lg:text-6xl tracking-widest	">
           LunchBox
         </h1>
-        <p className="text-white py-1  text-sm w-screen lg:w-full lg:text-2xl">
+        <p className="text-black font-semibold py-1  text-sm w-screen lg:w-full lg:text-2xl">
           Find the best restaurants, cafés and bars in Pune
         </p>
       </div>
