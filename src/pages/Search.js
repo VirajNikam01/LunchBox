@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Restraunant from "../components/Restraunant";
 import MOCK_DATA from "../utility/swiggyMockData.json";
+import { Link } from "react-router-dom";
 
 const Search = () => {
   const [search, setSearch] = useState("");
@@ -27,7 +28,9 @@ const Search = () => {
       <div className="flex flex-wrap items-center justify-evenly lg:pt-6">
         {filtered.map((elem) => (
           <div>
-            <Restraunant key={elem.info.id} resData={elem.info} />
+            <Link to={'resdetails/' + elem.info.id} key={elem.info.id} >
+              <Restraunant resData={elem.info} />
+            </Link>
           </div>
         ))}
       </div>

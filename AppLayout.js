@@ -44,6 +44,10 @@ const appRouter = createBrowserRouter([
       {
         path: "resdetails/:resId",
         element: <ResDetails/>
+      },
+      {
+        path: "search/resdetails/:resId",
+        element: <ResDetails/>
       }
     ],
     errorElement: <Error/>
