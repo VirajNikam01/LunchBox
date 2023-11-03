@@ -5,9 +5,9 @@ const Restraunant = ({ resData }) => {
     resData;
 
   return (
-    <div className=" relative w-56 min-h-fit lg:w-72 lg:h-96 shadow-lg rounded-xl my-5 pb-2 cursor-pointer transition-all duration-500 hover:scale-95 ">
+    <div className=" relative w-72 min-h-fit lg:w-72 lg:h-96 shadow-lg rounded-xl my-5 pb-2 cursor-pointer transition-all duration-500 hover:scale-95 ">
       <img
-        className="w-full h-32  mx-auto mt-2 rounded-xl lg:h-1/2"
+        className="w-11/12 h-40  mx-auto mt-2 rounded-xl lg:h-1/2"
         src={RESTRO_URL + cloudinaryImageId}
         alt=""
       />
