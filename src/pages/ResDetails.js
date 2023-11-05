@@ -39,7 +39,7 @@ const ResDetails = () => {
   return (
     <div className="min-h-screen pt-12 sm:pt-20">
       <div className="  bg-black text-white w-full py-11 px-2">
-        <div className="flex justify-between mx-auto lg:w-4/6">
+        <div className="flex justify-between mx-auto sm:w-4/6">
           <div className="w-32 sm:w-52">
             <img
               className="w-full rounded"

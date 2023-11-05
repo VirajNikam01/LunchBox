@@ -1,6 +1,10 @@
 import { Link } from "react-router-dom";
+import { useSelector } from "react-redux";
 
 const Header = () => {
+  const cart = useSelector((store) => store.cart.items);
+  console.log(cart);
+
   return (
     <div className="flex justify-between items-center p-2 sm:w-11/12 mx-auto fixed z-10">
       {/* logo */}
@@ -46,8 +50,9 @@ const Header = () => {
           <li className="px-2 mx-4 cursor-pointer transition-all duration-300 text-teal-9500 hover:text-teal-600">
             <i className="fa-solid fa-cart-shopping">
               <span className="text-xs hidden lg:inline-block sm:ml-2">
-                Cart
+                Cart 
               </span>
+              <span className="text-xs mx-1 p-2 text-white bg-teal-500 rounded-xl">{cart.length}</span>
             </i>
           </li>
         </Link>

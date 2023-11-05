@@ -9,14 +9,18 @@ import Contact from "./src/pages/Contact";
 import Cart from './src/pages/Cart'
 import Error from './src/pages/Error'
 import ResDetails from "./src/pages/ResDetails";
+import {Provider} from "react-redux"
+import appStore from "./src/utility/appStore";
 
 const AppLayout = () => {
   return (
+    <Provider store={appStore}>
     <div>
       <Header />
       <Outlet />
       <Footer />
     </div>
+    </Provider>
   );
 };
 
