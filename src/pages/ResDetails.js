@@ -1,13 +1,22 @@
 import { useParams } from "react-router-dom";
 import useResInfo from "../utility/useResInfo";
-import Shimmer from "../Shimmer";
+import Loader from "../assets/Loader.svg";
 import { RESINFOIMG_URL } from "../utility/constant";
 import ResDCategary from "../components/ResDCategary";
+import ApiBlocked from "./ApiBlocked";
 
 const ResDetails = () => {
+  window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+
   const { resId } = useParams();
   const data = useResInfo(resId);
-  if (data == null) return <Shimmer />;
+  if (data == null)
+    return (
+      <div className="w-full min-h-screen flex items-center justify-center">
+        <img className="w-32" src={Loader} alt="" />
+      </div>
+    );
+  if (data.error.code === 403) return <ApiBlocked />;
 
   const {
     city,

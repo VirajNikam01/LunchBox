@@ -4,6 +4,7 @@ import { useNavigate } from "react-router-dom";
 import { clearCart, removeItems } from "../utility/cartSlice";
 
 const Cart = () => {
+  window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   const items = useSelector((store) => store.cart.items);
   const dispatch = useDispatch()
   const navigate = useNavigate();

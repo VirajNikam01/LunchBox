@@ -4,6 +4,7 @@ import MOCK_DATA from "../utility/swiggyMockData.json";
 import { Link } from "react-router-dom";
 
 const Search = () => {
+  window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
   const [search, setSearch] = useState("");
   const data =
     MOCK_DATA.data.cards[2].card.card.gridElements.infoWithStyle.restaurants;
@@ -28,7 +29,7 @@ const Search = () => {
       <div className="flex flex-wrap items-center justify-evenly lg:pt-6">
         {filtered.map((elem) => (
           <div>
-            <Link to={'resdetails/' + elem.info.id} key={elem.info.id} >
+            <Link to={"resdetails/" + elem.info.id} key={elem.info.id}>
               <Restraunant resData={elem.info} />
             </Link>
           </div>
